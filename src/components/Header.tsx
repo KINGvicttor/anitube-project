@@ -34,7 +34,7 @@ export const Header = () => {
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5.365V3m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175 0 .593 0 1.292-.538 1.292H5.538C5 18 5 17.301 5 16.708c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 12 5.365ZM8.733 18c.094.852.306 1.54.944 2.112a3.48 3.48 0 0 0 4.646 0c.638-.572 1.236-1.26 1.33-2.112h-6.92Z" />
                         </svg>
                         
-                        <div className="hidden w-12 h-12 m-2 cursor-pointer border-2 border-primary rounded-full lg:block bg-center bg-cover bg-[url(https://img.freepik.com/free-vector/cute-ninja-with-shuriken-sword-cartoon-vector-icon-illustration-people-holiday-isolated-flat_138676-9389.jpg?t=st=1740493952~exp=1740497552~hmac=47275e3b533249c0c7e6e8d979c917e13ec696615732293236081011d9cfc4a4&w=2000)]"></div>
+                        <div className="hidden w-12 h-12 m-2 cursor-pointer border-2 border-primary rounded-full lg:inline bg-center bg-cover bg-[url(https://img.freepik.com/free-vector/cute-ninja-with-shuriken-sword-cartoon-vector-icon-illustration-people-holiday-isolated-flat_138676-9389.jpg?t=st=1740493952~exp=1740497552~hmac=47275e3b533249c0c7e6e8d979c917e13ec696615732293236081011d9cfc4a4&w=2000)]"></div>
                     </div>
                 </div>
             </div>
