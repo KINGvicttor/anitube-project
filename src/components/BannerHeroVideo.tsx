@@ -21,14 +21,14 @@ export const BannerHeroVideo = () => {
                     <div>
                         {!mute &&
                             <button onClick={() => setMute(!mute)}>
-                                <svg className="w-8 h-8 mb-2 border border-white rounded-full text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <svg className="w-8 h-8 mb-2 cursor-pointer border border-white rounded-full text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.5 8.43A4.985 4.985 0 0 1 17 12a4.984 4.984 0 0 1-1.43 3.5m2.794 2.864A8.972 8.972 0 0 0 21 12a8.972 8.972 0 0 0-2.636-6.364M12 6.135v11.73a1 1 0 0 1-1.64.768L6 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2l4.36-3.633a1 1 0 0 1 1.64.768Z" />
                                 </svg>
                             </button>
                         }
                         {mute &&
                             <button onClick={() => setMute(!mute)}>
-                                <svg className="w-8 h-8 mb-2 border border-white rounded-full text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <svg className="w-8 h-8 mb-2 cursor-pointer border border-white rounded-full text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.5 8.43A4.985 4.985 0 0 1 17 12c0 1.126-.5 2.5-1.5 3.5m2.864-9.864A8.972 8.972 0 0 1 21 12c0 2.023-.5 4.5-2.5 6M7.8 7.5l2.56-2.133a1 1 0 0 1 1.64.768V12m0 4.5v1.365a1 1 0 0 1-1.64.768L6 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m1-4 14 14" />
                                 </svg>
                             </button>
@@ -36,7 +36,7 @@ export const BannerHeroVideo = () => {
                     </div>
                     <div className="flex flex-col w-[280px] text-start lg:w-[500px]">
                         <p className="lg:text-2xl">New Release</p>
-                        <h1 className="font-bold text-4xl mt-2 mb-2 lg:text-red-500 md:text-green-500 sm:text-blue-500 lg:text-7xl">Mystic Eyes</h1>
+                        <h1 className="font-bold text-4xl mt-2 mb-2 lg:text-7xl">Mystic Eyes</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at molestie dui, at sodales dui. Curabitur at purus justo. Mauris et nulla nec leo lacinia lobortis. .</p>
                     </div>
                     <div className="w-[280px] flex mb-20 mt-4 lg:w-full">
