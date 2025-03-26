@@ -21,7 +21,7 @@ export const Premiere = () => {
                         <div className="container mx-auto h-full flex">
                             <div className="w-[50%] h-full flex flex-col justify-center items-start">
                                 <div>
-                                    <p className="font-bold border px-2 py-1 rounded-lg w-20">Premiere</p>
+                                    <p className="font-bold border px-2 py-1 rounded-lg w-20 cursor-pointer">Premiere</p>
                                 </div>
                                 <div className="flex flex-col w-[500px] text-start mt-4">
                                     <h1 className="font-bold text-4xl mt-2 mb-2 lg:text-6xl">{anime.attributes.titles.en_jp.substring(0,11)}</h1>

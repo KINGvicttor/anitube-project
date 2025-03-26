@@ -6,7 +6,8 @@ export type Anime = {
             en_jp: string;
         }
         posterImage: {
-            original: string;
+            original: string,
+            medium: string
         }
         coverImage: {
             original: string;

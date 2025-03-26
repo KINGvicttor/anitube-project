@@ -19,7 +19,7 @@ export const BannerSecondary = () => {
                         <div className="container mx-auto px-4 w-full h-[350px] flex flex-col justify-end items-start lg:px-0">
                             <div className="flex flex-col w-[280px] text-start lg:w-[500px]">
                                 <div className="flex justify-between">
-                                    <p className="border rounded-lg px-2 py-1">New Release</p>
+                                    <p className="border rounded-lg px-2 py-1 cursor-pointer">New Release</p>
                                 </div>
                                 <h1 className="font-bold text-4xl mt-2 mb-2 lg:text-7xl">{anime.attributes.titles.en_jp}</h1>
                                 <p>{anime.attributes.synopsis.substring(0, 300)}.</p>

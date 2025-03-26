@@ -11,11 +11,14 @@ export const Trending = () => {
                 <p className="font-bold text-4xl">Trending Shows</p>
                 <a href="" className="font-bold hover:underline">See all {'>'}</a>
             </div>
-            <div className="container h-[500px] w-full flex flex-col flex-wrap justify-between items-center px-4 overflow-hidden sm:px-0 md:px-0 lg:px-0 lg:flex-row lg:flex-nowrap lg:h-[250px]">
-                {dataCtx?.trendingAnimesData.slice(0,5).map(anime => (
-                    <div key={anime.id} className="flex justify-start w-56 h-56 rounded-lg cursor-pointer lg:w-60 hover:h-60 hover:ease-in-out hover:duration-500 bg-center bg-cover" style={{backgroundImage: `url('${anime.attributes.posterImage.original}')`}}>
-                        <div className="w-full h-full flex justify-start rounded-lg  items-end pointer-events-none bg-gradient-to-t from-black to-transparent">
-                            <p className="font-bold text-xl m-4">{anime.attributes.titles.en_jp}</p>
+            <div className="w-full h-[500px] px-4 flex justify-between flex-wrap sm:px-0 md:px-0 lg:px-0 md:justify-center md:gap-4 lg:flex-nowrap lg:h-[280px] lg:items-center">
+                {dataCtx?.trendingAnimesData.slice(5, 10).map(anime => (
+                    <div className="w-[205px] h-[140px] sm:w-[300px] sm:h-[150px] md:w-[300px] lg:h-[250px] lg:w-[300px]">
+                        <div className="w-full h-full overflow-hidden rounded-lg">
+                            <img className="w-full h-full bg-center rounded-lg cursor-pointer hover:scale-110 hover:duration-1000" src={anime.attributes.posterImage.medium} />
+                        </div>
+                        <div className="w-full h-full relative flex justify-start items-end z-10 mt-[-250px] pointer-events-none rounded-lg bg-gradient-to-t from-10% from-black to-transparent">
+                            <h1 className="m-4 font-bold">{anime.attributes.titles.en_jp}</h1>
                         </div>
                     </div>
                 ))}
