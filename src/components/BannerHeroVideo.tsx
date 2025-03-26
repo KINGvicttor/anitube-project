@@ -35,7 +35,7 @@ export const BannerHeroVideo = () => {
                         }
                     </div>
                     <div className="flex flex-col w-[280px] text-start lg:w-[500px]">
-                        <p className="lg:text-2xl">New Release</p>
+                        <p className="lg:text-2xl border px-2 py-1 rounded-lg w-40 cursor-pointer">New Release</p>
                         <h1 className="font-bold text-4xl mt-2 mb-2 lg:text-7xl">Mystic Eyes</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at molestie dui, at sodales dui. Curabitur at purus justo. Mauris et nulla nec leo lacinia lobortis. .</p>
                     </div>
