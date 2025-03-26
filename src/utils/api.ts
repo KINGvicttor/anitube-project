@@ -11,7 +11,17 @@ export const getAnimes = async (): Promise<Anime[] | any> => {
     return res.data;
 }
 
-export const getManga = async (): Promise<Manga[] | any> => {
+export const getAnime = async (id: number): Promise<Anime | any> => {
+    const res = await url.get(`/anime?filter[id]=${id}`);
+    return res.data;
+}
+
+export const getMangas = async (): Promise<Manga[] | any> => {
     const res = await url.get('/manga?page[limit]=20');
+    return res.data;
+}
+
+export const getManga = async (id: number): Promise<Manga | any> => {
+    const res = await url.get(`/manga?filter[id]=${id}`);
     return res.data;
 }
