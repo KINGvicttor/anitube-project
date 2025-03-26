@@ -25,14 +25,14 @@ export const DataContextProvider = ({children}: Props) => {
     useEffect(() => {
         const getAnimesData = getAnimes();
         getAnimesData.then((response) => setAnimesData(response.data));
-        const getAnimeData = getAnime(11);
+        const getAnimeData = getAnime(12);
         getAnimeData.then((response) => setAnimeData(response.data));
 
         const getMangasData = getMangas();
         getMangasData.then((response) => setMangasData(response.data));
         const getMangaData = getManga(11);
         getMangaData.then((response) => setMangaData(response.data));
-    })
+    }, [])
 
 
     return(

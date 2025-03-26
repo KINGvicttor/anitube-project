@@ -2,7 +2,7 @@ export type Manga = {
     id: number
     attributes: {
         synopsis: string;
-        title: {
+        titles: {
             en_jp: string;
         }
         posterImage: {
