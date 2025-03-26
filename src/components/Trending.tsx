@@ -17,7 +17,7 @@ export const Trending = () => {
                         <div className="w-full h-full overflow-hidden rounded-lg">
                             <img className="w-full h-full bg-center rounded-lg cursor-pointer hover:scale-110 hover:duration-1000" src={anime.attributes.posterImage.medium} />
                         </div>
-                        <div className="w-full h-full relative flex justify-start items-end z-10 mt-[-250px] pointer-events-none rounded-lg bg-gradient-to-t from-10% from-black to-transparent">
+                        <div className="w-full h-full relative flex justify-start items-end z-10 mt-[-140px] sm:mt-[-140px] md:mt-[-140px] lg:mt-[-250px] pointer-events-none rounded-lg bg-gradient-to-t from-10% from-black to-transparent">
                             <h1 className="m-4 font-bold">{anime.attributes.titles.en_jp}</h1>
                         </div>
                     </div>

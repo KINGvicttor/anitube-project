@@ -21,6 +21,7 @@ const Page = () => {
           <Release />
           <Recommendation />
         </section>
+        <BannerSecondary />
 
       </div>
     </DataContextProvider>
