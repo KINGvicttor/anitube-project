@@ -1,4 +1,4 @@
-export type Anime = {
+export type Manga = {
     id: number
     attributes: {
         synopsis: string;
