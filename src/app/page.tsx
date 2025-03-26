@@ -7,6 +7,7 @@ import { Release } from "@/components/Release";
 import { Recommendation } from "@/components/Recommendation";
 import { BannerSecondary } from "@/components/BannerSecondary";
 import { DataContextProvider } from "@/contexts/DataContext";
+import { Manga } from "@/components/Mangas";
 
 const Page = () => {
   return (
@@ -20,6 +21,9 @@ const Page = () => {
           <Recommendation />
         </section>
         <BannerSecondary />
+        <section className="flex flex-col w-full bg-radial from-20% from-primary to-secondary">
+          <Manga />
+        </section>
       </div>
     </DataContextProvider>
   )
