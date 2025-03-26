@@ -14,8 +14,8 @@ export const BannerSecondary = () => {
     return (
         <section className="w-full h-[400px]">
             {dataCtx?.animeData.map(anime => (
-                <div className="w-full h-full bg-center bg-cover" style={{backgroundImage: `url('${anime.attributes.coverImage.original}')`}}>
-                    <div className="flex justify-center items-center w-full h-full bg-radial from-50% from-transparent to-black">
+                <div key={anime.id} className="w-full h-full bg-center bg-cover" style={{backgroundImage: `url('${anime.attributes.coverImage.original}')`}}>
+                    <div className="flex justify-center items-center w-full h-full bg-black/50">
                         <div className="container mx-auto px-4 w-full h-[350px] flex flex-col justify-end items-start lg:px-0">
                             <div className="flex flex-col w-[280px] text-start lg:w-[500px]">
                                 <div className="flex justify-between">

@@ -16,6 +16,11 @@ export const getAnime = async (id: number): Promise<Anime | any> => {
     return res.data;
 }
 
+export const getTrendingAnimes = async (): Promise<Anime[] | any> => {
+    const res = await url.get('/trending/anime');
+    return res.data
+}
+
 export const getMangas = async (): Promise<Manga[] | any> => {
     const res = await url.get('/manga?page[limit]=20');
     return res.data;

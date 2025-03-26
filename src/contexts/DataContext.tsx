@@ -1,11 +1,12 @@
 import { Anime } from "@/types/Anime";
 import { Manga } from "@/types/Manga";
-import { getAnime, getAnimes, getManga, getMangas } from "@/utils/api";
+import { getAnime, getAnimes, getManga, getMangas, getTrendingAnimes } from "@/utils/api";
 import { createContext, ReactNode, useEffect, useState } from "react";
 
 type DataContextType = {
     animesData: Anime[];
     animeData: Anime[];
+    trendingAnimesData: Anime[];
     mangasData: Manga[];
     mangaData: Manga[];
 }
@@ -19,6 +20,7 @@ export const DataContextProvider = ({children}: Props) => {
 
     const [animesData, setAnimesData] = useState<Anime[]>([]);
     const [animeData, setAnimeData] = useState<Anime[]>([]);
+    const [trendingAnimesData, setTrendingAnimesData] = useState<Anime[]>([]);
     const [mangasData, setMangasData] = useState<Manga[]>([]);
     const [mangaData, setMangaData] = useState<Manga[]>([]);
 
@@ -27,6 +29,8 @@ export const DataContextProvider = ({children}: Props) => {
         getAnimesData.then((response) => setAnimesData(response.data));
         const getAnimeData = getAnime(12);
         getAnimeData.then((response) => setAnimeData(response.data));
+        const getTrendingAnimesData = getTrendingAnimes();
+        getTrendingAnimesData.then((response) => setTrendingAnimesData(response.data))
 
         const getMangasData = getMangas();
         getMangasData.then((response) => setMangasData(response.data));
@@ -36,7 +40,7 @@ export const DataContextProvider = ({children}: Props) => {
 
 
     return(
-        <DataContext.Provider value={{animesData, animeData, mangasData, mangaData}}>
+        <DataContext.Provider value={{animesData, animeData, trendingAnimesData, mangasData, mangaData}}>
             {children}
         </DataContext.Provider>
     )
