@@ -17,7 +17,7 @@ export const BannerHeroVideo = () => {
                 muted={mute}>
             </video>
             <div className="flex flex-col justify-end w-full h-[calc(100vh-100px)] relative mt-[calc(-100vh+100px)] bg-black/50 ">
-                <div className="flex flex-col w-full container mx-auto lg:px-10 px-6"> 
+                <div className="flex flex-col w-full container mx-auto px-4 sm:px-0 md:px-0 lg:px-0"> 
                     <div>
                         {!mute &&
                             <button onClick={() => setMute(!mute)}>

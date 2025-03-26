@@ -1,6 +1,6 @@
 export const Header = () => {
     return (
-        <header className="flex mx-auto w-full h-[100px] justify-between bg-black">
+        <header className="container flex mx-auto w-full h-[100px] justify-between bg-black">
             <div className="grid grid-cols-3 grid-rows-2 w-full">
                 <div className="col-start-1 col-end-3 row-start-1 row-end-3">
                     <div className="w-full h-full flex justify-start items-center">
