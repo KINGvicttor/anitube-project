@@ -6,19 +6,22 @@ import { Header } from "@/components/Header";
 import { Release } from "@/components/Release";
 import { Recommendation } from "@/components/Recommendation";
 import { BannerSecondary } from "@/components/BannerSecondary";
+import { DataContextProvider } from "@/contexts/DataContext";
 
 const Page = () => {
   return (
-    <div className="mx-auto font-roboto">
-      <Header />
-      <BannerHeroVideo />
-      <section className="flex flex-col w-full bg-radial from-20% from-primary to-secondary">
-        <Trending />
-        <Release />
-        <Recommendation />
-      </section>
-      <BannerSecondary />
-    </div>
+    <DataContextProvider>
+      <div className="mx-auto font-roboto">
+        <Header />
+        <BannerHeroVideo />
+        <section className="flex flex-col w-full bg-radial from-20% from-primary to-secondary">
+          <Trending />
+          <Release />
+          <Recommendation />
+        </section>
+        <BannerSecondary />
+      </div>
+    </DataContextProvider>
   )
 }
 
