@@ -45,6 +45,7 @@ export const Premiere = () => {
                                         ref={videoTag}
                                         src={videoUrl}
                                         autoPlay
+                                        controls
                                         loop></video>
                                 </div>
                             </div>

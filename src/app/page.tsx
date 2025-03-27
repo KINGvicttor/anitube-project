@@ -10,6 +10,7 @@ import { DataContextProvider } from "@/contexts/DataContext";
 import { Manga } from "@/components/Mangas";
 import { Premiere } from "@/components/Premiere";
 import { Blog } from "@/components/Blog";
+import { Footer } from "@/components/Footer";
 
 const Page = () => {
   return (
@@ -28,6 +29,7 @@ const Page = () => {
         </section>
         <Premiere />
         <Blog />
+        <Footer />
       </div>
     </DataContextProvider>
   )
