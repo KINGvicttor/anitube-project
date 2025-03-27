@@ -12,14 +12,14 @@ export const BannerSecondary = () => {
     })
 
     return (
-        <section className="w-full h-[400px] flex border-b-8 border-t-8 border-black">
+        <section className="w-full h-[650px] flex border-b-8 border-t-8 border-black lg:h-[400px]">
             {dataCtx?.animeData.map(anime => (
                 <div key={anime.id} className="w-full h-full flex bg-cover bg-center" style={{ backgroundImage: `url('${anime.attributes.coverImage.original}')` }}>
                     <div className="bg-black/60 w-full h-full">
-                        <div className="container mx-auto flex items-center w-full h-full">
+                        <div className="container px-4 mx-auto flex items-center w-full h-full lg:px-0">
                             <div className="w-[50%] h-[70%] flex flex-col">
                                 <p className="rounded-lg border px-2 py-1 w-28 cursor-pointer">New Release</p>
-                                <h1 className="mt-4 text-6xl">{anime.attributes.titles.en_jp}</h1>
+                                <h1 className="mt-4 text-6xl w-72">{anime.attributes.titles.en_jp}</h1>
                                 <p className="mt-4">{anime.attributes.synopsis.substring(0, 300)}</p>
                                 <div className="w-72 flex justify-between mt-4">
                                     <button className="px-3 py-2 flex border border-primary bg-primary justify-center items-center rounded-lg cursor-pointer hover:bg-transparent hover:ease-in-out hover:duration-500">
