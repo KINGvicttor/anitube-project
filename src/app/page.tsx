@@ -22,7 +22,10 @@ const Page = () => {
           <Recommendation />
         </section>
         <BannerSecondary />
-
+        <section className="flex flex-col w-full bg-radial from-20% from-primary to-secondary">
+          <Manga />
+        </section>
+        <Premiere />
       </div>
     </DataContextProvider>
   )
