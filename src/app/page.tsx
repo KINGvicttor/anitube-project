@@ -9,6 +9,7 @@ import { BannerSecondary } from "@/components/BannerSecondary";
 import { DataContextProvider } from "@/contexts/DataContext";
 import { Manga } from "@/components/Mangas";
 import { Premiere } from "@/components/Premiere";
+import { Blog } from "@/components/Blog";
 
 const Page = () => {
   return (
@@ -26,6 +27,7 @@ const Page = () => {
           <Manga />
         </section>
         <Premiere />
+        <Blog />
       </div>
     </DataContextProvider>
   )
