@@ -15,8 +15,13 @@
 ## Projeto em andamento feito com o intuito de estudos
 
 ## Prints
+
 ![index](https://github.com/user-attachments/assets/14b6bf12-032a-4195-aa53-a72d63fe78f2)
-## ------------
+
+## ---------------------------------------------------------------------------------------------------------------------------
+
 ![animes](https://github.com/user-attachments/assets/195a6733-c256-40fc-a5a6-068a56ff7966)
-## ------------
+
+## ---------------------------------------------------------------------------------------------------------------------------
+
 ![mangas](https://github.com/user-attachments/assets/8fb24f45-7f25-4292-b1d6-716acc92795a)
