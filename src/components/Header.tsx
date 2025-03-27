@@ -12,11 +12,11 @@ export const Header = () => {
                 <div className="hidden col-start-2 col-end-3 row-start-1 row-end-3 lg:flex">
                     <nav className="flex justify-center items-center w-full h-full">
                         <ul className="flex justify-between w-full uppercase">
-                            <a href="" className="border-b-4 border-transparent font-semibold hover:border-b-4 hover:border-primary hover:text-white hover:font-bold">home</a>
-                            <a href="" className="border-b-4 border-transparent font-semibold hover:border-b-4 hover:border-primary hover:text-white hover:font-bold">animes</a>
-                            <a href="" className="border-b-4 border-transparent font-semibold hover:border-b-4 hover:border-primary hover:text-white hover:font-bold">mangas</a>
-                            <a href="" className="border-b-4 border-transparent font-semibold hover:border-b-4 hover:border-primary hover:text-white hover:font-bold">blog</a>
-                            <a href="" className="border-b-4 border-transparent font-semibold hover:border-b-4 hover:border-primary hover:text-white hover:font-bold">pages</a>
+                            <a href="../" className="border-b-4 border-transparent font-semibold hover:border-b-4 hover:border-primary hover:text-white hover:font-bold">home</a>
+                            <a href="/animes" className="border-b-4 border-transparent font-semibold hover:border-b-4 hover:border-primary hover:text-white hover:font-bold">animes</a>
+                            <a href="/mangas" className="border-b-4 border-transparent font-semibold hover:border-b-4 hover:border-primary hover:text-white hover:font-bold">mangas</a>
+                            <a href="../" className="border-b-4 border-transparent font-semibold hover:border-b-4 hover:border-primary hover:text-white hover:font-bold">blog</a>
+                            <a href="../" className="border-b-4 border-transparent font-semibold hover:border-b-4 hover:border-primary hover:text-white hover:font-bold">pages</a>
                         </ul>
                     </nav>
                 </div>

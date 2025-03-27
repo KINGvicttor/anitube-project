@@ -13,7 +13,7 @@ export const Recommendation = () => {
             </div>
             <div className="w-full h-[500px] px-4 flex justify-between flex-wrap sm:px-0 md:px-0 lg:px-0 md:justify-center md:gap-4 lg:flex-nowrap lg:h-[300px] lg:items-center">
                 {dataCtx?.animesData.slice(5, 10).map(anime => (
-                    <div className="w-[205px] h-[140px] sm:w-[300px] sm:h-[150px] md:w-[300px] lg:h-[250px] lg:w-[300px] lg:mb-4">
+                    <div key={anime.id} className="w-[205px] h-[140px] sm:w-[300px] sm:h-[150px] md:w-[300px] lg:h-[250px] lg:w-[300px] lg:mb-4">
                         <div className="w-full h-full overflow-hidden rounded-lg">
                             <img className="w-full h-full bg-center rounded-lg cursor-pointer hover:scale-110 hover:duration-1000" src={anime.attributes.posterImage.medium} />
                         </div>
