@@ -8,12 +8,12 @@ export const Recommendation = () => {
     return (
         <div className="container mx-auto flex flex-col w-full">
             <div className="w-full h-[100px] flex justify-between items-center px-4 sm:px-0 md:px-0 lg:px-0">
-                <p className="font-bold text-4xl">Trending Shows</p>
+                <p className="font-bold text-4xl">Recommendation</p>
                 <a href="" className="font-bold hover:underline">See all {'>'}</a>
             </div>
-            <div className="w-full h-[500px] px-4 flex justify-between flex-wrap sm:px-0 md:px-0 lg:px-0 md:justify-center md:gap-4 lg:flex-nowrap lg:h-[280px] lg:items-center">
+            <div className="w-full h-[500px] px-4 flex justify-between flex-wrap sm:px-0 md:px-0 lg:px-0 md:justify-center md:gap-4 lg:flex-nowrap lg:h-[300px] lg:items-center">
                 {dataCtx?.trendingAnimesData.slice(5, 10).map(anime => (
-                    <div className="w-[205px] h-[140px] sm:w-[300px] sm:h-[150px] md:w-[300px] lg:h-[250px] lg:w-[300px]">
+                    <div className="w-[205px] h-[140px] sm:w-[300px] sm:h-[150px] md:w-[300px] lg:h-[250px] lg:w-[300px] lg:mb-4">
                         <div className="w-full h-full overflow-hidden rounded-lg">
                             <img className="w-full h-full bg-center rounded-lg cursor-pointer hover:scale-110 hover:duration-1000" src={anime.attributes.posterImage.medium} />
                         </div>
